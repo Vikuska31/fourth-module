@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="css_1.css">
 </head>
 <body>
-    <a href="site_2.html" target="_blank">Ссылка на вторую страницу</a>
-    <a href="https://getbootstrap.com/" target="_blank">Нажми на меня</a>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="site_2.html" target="_blank">Форма</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+        </ol>
+      </nav>
+    
     <form>
         <label for="1">Поле для текста</label>
         <input class="form-control form-control-lg" type="text" placeholder="Введи текст" aria-label=".form-control-lg example" id="1">
